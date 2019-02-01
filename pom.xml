@@ -6,7 +6,10 @@
 
     <groupId>site.romvoid</groupId>
     <artifactId>HttpLib</artifactId>
+    <packaging>jar</packaging>
     <version>1.0.0</version>
+    <name>HttpLib</name>
+    <url>http://maven.apache.org</url>
     <build>
         <plugins>
             <plugin>
@@ -15,6 +18,14 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                <executions>
+                	<exection>
+                		<id>attach-javadocs</id>
+                		<goals>
+                			<goal>jar</goal>
+                		</goals>
+                	</exection>
+                </executions>
                 </configuration>
             </plugin>
         </plugins>
